@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Chart</title>
+</head>
+<body>
+
+<h2>Student Marks Chart</h2>
+
+<div id="chart"></div>
+
+<script>
+let students = [
+    ["Rahul", 80],
+    ["Priya", 90],
+    ["Amit", 70],
+    ["Neha", 85]
+];
+
+students.forEach(function(s) {
+    document.getElementById("chart").innerHTML +=
+        s[0] + " : " + s[1] + "%<br>";
+});
+</script>
+
+</body>
+</html>
